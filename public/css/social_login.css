@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a1612;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+    background: black;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: glow 2s infinite ease-in-out;
+}
+.container:hover {
+    color: white;
+    background-color: #133228;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+h1 {
+    margin-bottom: 1rem;
+    color: white;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.btn-facebook {
+    background-color: #3b5998;
+}
+.btn-facebook:hover {
+    background-color: #2d4373;
+}
+.btn-google {
+    background-color: #db4437;
+}
+.btn-google:hover {
+    background-color: #c1351d;
+}
+.btn-github {
+    background-color: #6e6c6c;
+}
+.btn-github:hover {
+    background-color: #2d2d2d;
+}
+.btn-instagram {
+    background-color: #e4405f;
+}
+.btn-instagram:hover {
+    background-color: #c13584;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
